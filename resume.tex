@@ -7,45 +7,54 @@
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{Bin Yuan}
+\name{Guanyu Li}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \email{liguanyubest@gmail.com} \textperiodcentered\ 
+  \phone{(+86) 131-6257-8889} \textperiodcentered\ 
+  \github[github/liguanyu]{https://github.com/liguanyu}}
 
 \section{\faGraduationCap\ Education}
-\datedsubsection{\textbf{Shanghai Jiao Tong University (SJTU)}, Shanghai, China}{2013 -- Present}
-\textit{Master student} in Electronics Engineering (EE), expected March 2016
-\datedsubsection{\textbf{Xidian University}, Shaanxi, China}{2009 -- 2013}
-\textit{B.S.} in Electronics Engineering (EE)
+\datedsubsection{\textbf{Shanghai Jiao Tong University}, Shanghai, China}{2017 -- Present}
+\textit{Master student} in Software Engineering, expected March 2020
+\datedsubsection{\textbf{Shanghai Jiao Tong University}, Shanghai, China}{2013 -- 2017}
+\textit{B.S.} in Mechanical Engineering
 
 \section{\faUsers\ Experience}
-\datedsubsection{\textbf{FLAG Inc.} California, America}{2012 -- Present}
-\role{Summer Intern}{Manager: xxx}
-Brief introduction: xxx.
+\datedsubsection{\textbf{Multi-OSv}}{Jul. 2018 -- Present}
+\role{C/C++,Unikernel}{Laboratory research project}
+Multi-process support and Privilege isolation of Unikernel, based on \href{https://http://osv.io/}{\emph{OSv}}
 \begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
+  \item Three-layer Privilege isolation design for Unikernel
+  \begin{itemize}
+    \item Utilize new hardware features (MPK) of x86  to ensure both speed and isolation
+    \item Use Assembler and other methods to modify system calls to ensure control flow identity
+    \item System call is 1 to 2 times faster than Linux syscall
+  \end{itemize}
+  \item Designed and implemented multi-process features, and API support (fork, etc.)
+  \begin{itemize}
+    \item Redesigning address space and kernel architecture, modify scheduler
+    \item The speed of fork is 3 times that of Linux
+  \end{itemize}
+  \item Nearing completion, and plan to open source after paper accepted
 \end{itemize}
 
-\datedsubsection{\textbf{xxx Projects}}{Jan. 2015 -- Present}
-\role{C, Python, Django, Linux}{Individual Projects, collaborated with xxx}
-Brief introduction: xxx
+\datedsubsection{\textbf{TZ-NVM}}{Feb. 2018 -- Jun. 2018}
+\role{C,ARM,Linux}{Laboratory research project}
+Using ARM TrustZone to accelerate the journal of Ext4
 \begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
+  \item Manage independent memory with TrustZone as non-volatile storage (NVM)
+  \item Using Linux driver Register the TZ-NVM as a block device for the acceleration of journal
+  \item the write speed is 1.5 times that of the normal Ext4 partition under O\_SYNC mode
 \end{itemize}
 
-\datedsubsection{\textbf{\LaTeX\ résumé template}}{May. 2015 -- Present}
-\role{\LaTeX, Maintainer}{Individual Projects}
-An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
+\datedsubsection{\textbf{Deformable Leaf}}{Dec. 2017 -- Jan. 2018}
+\role{C++,OpenGL}{Individual Projects, for course "Advanced Computer Graphics"}
+Deformable leaf model built from a picture,https://github.com/liguanyu/Deformable\_Leaf\_from\_A\_Picture
 \begin{itemize}
-  \item Easy to be further customized or extended
-  \item Full support for unicode characters (e.g. CJK) with \XeLaTeX\
-  \item FontAwesome 4.5.0 support
+  \item Analyse the edge of leaf from picture with OpenCV, and produce a mesh model
+  \item Using Bezier curve to Constructing flexible veins
+  \item Establish a correlation model between leaf veins and leaf nodes for deformation
 \end{itemize}
 
 % Reference Test
@@ -57,21 +66,21 @@ An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
 
 \section{\faCogs\ Skills}
 \begin{itemize}[parsep=0.5ex]
-  \item Programming Languages: C == Python > C++ > Java
+  \item Programming Languages: Know C/C++
   \item Platform: Linux
-  \item Development: Web, xxx
+  \item Region: Unikernel，Linux Kernel
 \end{itemize}
 
-\section{\faHeartO\ Honors and Awards}
-\datedline{\textit{\nth{1} Prize}, Award on xxx }{Jun. 2013}
-\datedline{Other awards}{2015}
-
-\section{\faInfo\ Miscellaneous}
-\begin{itemize}[parsep=0.5ex]
-  \item Blog: http://your.blog.me
-  \item GitHub: https://github.com/username
-  \item Languages: English - Fluent, Mandarin - Native speaker
-\end{itemize}
+\section{\faCheckSquare\ Honors and Awards}
+\datedline{Shanghai Jiaotong University Academic Progress Scholarship}{2014 - 2015}
+\datedline{\textit{Second prize}, The 31st National Physical Education Competition for Partial Universities (Shanghai Division)}{}
+\datedline{}{2014}
+% \section{\faInfo\ Miscellaneous}
+% \begin{itemize}[parsep=0.5ex]
+%   \item Blog: http://your.blog.me
+%   \item GitHub: https://github.com/username
+%   \item Languages: English - Fluent, Mandarin - Native speaker
+% \end{itemize}
 
 %% Reference
 %\newpage
